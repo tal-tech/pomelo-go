@@ -1,0 +1,37 @@
+# 目前不支持master
+IsMaster: false
+# 服务名称
+ServerId: "cluster-server-custom-996"
+# node服务对应的master地址
+AdvertiseAddr: "127.0.0.1:3005"
+# 本地服务rpc地址
+Listen: "0.0.0.0:8081"
+# 注册重试间隔（单位 s）
+RetryInterval: 5
+# 注册重试次数
+RetryTimes: 60
+# 与master通信token
+Token: "xxxxxx"
+
+# 本机服务信息
+ServerInfo:
+  serverType: "custom"
+  id: "cluster-server-custom-996"
+  type: "monitor"
+  pid: 99
+  info:
+    serverType: "custom"
+    id: "cluster-server-custom-996"
+    env: "local"
+    host: "127.0.0.1"
+    port: 8081
+    channelType: 2
+    cloudType: 1
+    clusterCount: 1
+    restart-force: true
+
+# 日志信息
+Log:
+  Mode: "volume"
+  Path: "/home/logs"
+  Level: "info"
